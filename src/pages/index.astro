@@ -1,15 +1,47 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from '../components/Button.astro';
-import Link from '../components/Link.astro';
-import { Image } from 'astro:assets';
+import Button from "../components/Button.astro";
+import Link from "../components/Link.astro";
+import { Image } from "astro:assets";
 import thumbsup from "../assets/images/thumbsup.png";
+import dopaminehero from "../assets/images/Dopamine1.png";
 ---
+
 <MainLayout title="Titel">
-	<article>
-		<h1>Index overskrift</h1>
-		<Button>Klik!</Button>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-		<Image src={thumbsup} alt=""></Image>
-	</article>
+  <article>
+    <Image src={dopaminehero} alt="Hero font" class="pb-16 relative" />
+
+    <div class="flex flex-col">
+      <h1 class="pb-16 max-w-xl sm:text-xl raleway-semibold-italic text-custom-darkblue">
+        <span class="raleway-extrabold-italic">Dopamine (noun)</span> — A chemical messenger of happiness; released by the brain when something feels rewarding, adding a lift to your mood and a spark to your day.
+      </h1>
+    </div>
+
+    <div class="flex justify-end">
+      <img src="/video.gif" alt="confetti" class="w-[400px] h-auto absolute top-[70px] right-4 sm:right-16 md:right-20 lg:right-32" />
+    </div>
+
+    <p class="bg-[#D9D9D9] p-8 mb-4">A fun and playful display font, designed to give you a boost of dopamine and brighten your day</p>
+
+    <section class="sm:grid sm:grid-cols-2 gap-4">
+      <div class="bg-[#D9D9D9] p-8 mb-4">
+        <h2>Inspiration</h2>
+        <p>En sjov display font</p>
+      </div>
+      <div class="bg-[#D9D9D9] p-8 mb-4">
+        <h2>Proces</h2>
+        <p>En sjov display font</p>
+      </div>
+    </section>
+    <section class="sm:grid sm:grid-cols-2 gap-4">
+      <div class="bg-[#D9D9D9] p-8 mb-4">
+        <h2>Forskelligt brug</h2>
+        <p>En sjov display font</p>
+      </div>
+      <div class="bg-[#D9D9D9] p-8 mb-4">
+        <h2>Eksempler</h2>
+        <p>En sjov display font</p>
+      </div>
+    </section>
+  </article>
 </MainLayout>
