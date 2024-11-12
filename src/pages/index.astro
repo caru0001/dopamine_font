@@ -5,6 +5,11 @@ import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
 import thumbsup from "../assets/images/thumbsup.png";
 import dopaminehero from "../assets/images/Dopamine1.png";
+import egrid from "../assets/images/E-grid.png";
+import eblack from "../assets/images/E-black.png";
+import ngrid from "../assets/images/N-grid.png";
+import nblack from "../assets/images/N-black.png";
+import moodboard from "../assets/images/Moodboard.png";
 ---
 
 <MainLayout title="Titel">
@@ -21,16 +26,37 @@ import dopaminehero from "../assets/images/Dopamine1.png";
       <img src="/video.gif" alt="confetti" class="w-[400px] h-auto absolute top-[70px] right-4 sm:right-16 md:right-20 lg:right-32" />
     </div>
 
-    <p class="bg-[#D9D9D9] p-8 mb-4">A fun and playful display font, designed to give you a boost of dopamine and brighten your day</p>
+    <div class="bg-[#B3DDF5] p-8 mb-4">
+      <p class="text-custom-darkblue mb-4 max-w-lg">Have fun with this playful <strong>display font</strong>, designed to give you a boost of dopamine and brighten your day</p>
+      <div class="flex flex-row gap-2">
+        <Image src={nblack} alt="Hero font" class="w-full h-full object-cover" />
+        <Image src={nblack} alt="Hero font" class="w-full h-full object-cover" />
+        <Image src={nblack} alt="Hero font" class="w-full h-full object-cover" />
+        <Image src={nblack} alt="Hero font" class="w-full h-full object-cover" />
+        <Image src={nblack} alt="Hero font" class="w-full h-full object-cover" />
+        <Image src={nblack} alt="Hero font" class="w-full h-full object-cover" />
+        <Image src={nblack} alt="Hero font" class="w-full h-full object-cover" />
+        <Image src={nblack} alt="Hero font" class="w-full h-full object-cover" />
+      </div>
+    </div>
 
     <section class="sm:grid sm:grid-cols-2 gap-4">
-      <div class="bg-[#D9D9D9] p-8 mb-4">
-        <h2>Inspiration</h2>
-        <p>En sjov display font</p>
+      <div class="bg-custom-darkblue p-8 mb-4 text-custom-lightpink">
+        <h2 class="sm:text-xl raleway-bold mb-4">Inspiration</h2>
+        <p class="mb-4">The font was designed in Adobe Illustrator using a rectangular grid and a series of circles placed within the grid.</p>
+        <div class="">
+          <Image src={moodboard} alt="Moodboard" class="w-full h-full object-cover" />
+        </div>
       </div>
-      <div class="bg-[#D9D9D9] p-8 mb-4">
-        <h2>Proces</h2>
-        <p>En sjov display font</p>
+      <div class="bg-custom-darkblue p-8 mb-4 text-custom-lightpink">
+        <h2 class="sm:text-xl raleway-bold mb-4">The process behind</h2>
+        <p class="mb-4">The font was designed in Adobe Illustrator using a rectangular grid and a series of circles placed within the grid.</p>
+        <div class="grid grid-cols-2 gap-2">
+          <Image src={egrid} alt="Hero font" class="w-full h-full object-cover" />
+          <Image src={eblack} alt="Hero font" class="w-full h-full object-cover" />
+          <Image src={ngrid} alt="Hero font" class="w-full h-full object-cover" />
+          <Image src={nblack} alt="Hero font" class="w-full h-full object-cover" />
+        </div>
       </div>
     </section>
     <section class="sm:grid sm:grid-cols-2 gap-4">
