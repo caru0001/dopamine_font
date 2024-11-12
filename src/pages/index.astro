@@ -1,15 +1,17 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from "../components/Button.astro";
-import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
-import thumbsup from "../assets/images/thumbsup.png";
 import dopaminehero from "../assets/images/Dopamine1.png";
 import egrid from "../assets/images/E-grid.png";
 import eblack from "../assets/images/E-black.png";
 import ngrid from "../assets/images/N-grid.png";
 import nblack from "../assets/images/N-black.png";
 import moodboard from "../assets/images/Moodboard.png";
+import D from "../assets/images/D.png";
+import O from "../assets/images/Oo.png";
+import P from "../assets/images/P.png";
+import A from "../assets/images/Aa.png";
+import M from "../assets/images/M.png";
 ---
 
 <MainLayout title="Titel">
@@ -17,9 +19,7 @@ import moodboard from "../assets/images/Moodboard.png";
     <Image src={dopaminehero} alt="Hero font" class="pb-16 relative" />
 
     <div class="flex flex-col">
-      <h1 class="pb-16 max-w-xl sm:text-xl raleway-semibold-italic text-custom-darkblue">
-        <span class="raleway-extrabold-italic">Dopamine (noun)</span> — A chemical messenger of happiness; released by the brain when something feels rewarding, adding a lift to your mood and a spark to your day.
-      </h1>
+      <h1 class="pb-16 max-w-xl sm:text-xl raleway-semibold-italic text-custom-darkblue">"<span class="raleway-extrabold-italic">Dopamine (noun)</span> — A chemical messenger of happiness; released by the brain when something feels rewarding, adding a lift to your mood and a spark to your day."</h1>
     </div>
 
     <div class="flex justify-end">
@@ -27,13 +27,14 @@ import moodboard from "../assets/images/Moodboard.png";
     </div>
 
     <div class="bg-[#B3DDF5] p-8 mb-4">
-      <p class="text-custom-darkblue mb-4 max-w-lg">Have fun with this playful <strong>display font</strong>, designed to give you a boost of dopamine and brighten your day</p>
+      <h2 class="text-custom-darkblue mb-4 max-w-lg sm:text-xl mb-4"><span class="raleway-bold">Dopamine</span> by Camilla Josephine Rundager</h2>
+      <p class="text-custom-darkblue mb-4 max-w-lg">A fun and playful <strong>display font</strong>, designed to give you a little boost of dopamine and brighten your day.</p>
       <div class="flex flex-row gap-2">
-        <Image src={nblack} alt="Hero font" class="w-full h-full object-cover" />
-        <Image src={nblack} alt="Hero font" class="w-full h-full object-cover" />
-        <Image src={nblack} alt="Hero font" class="w-full h-full object-cover" />
-        <Image src={nblack} alt="Hero font" class="w-full h-full object-cover" />
-        <Image src={nblack} alt="Hero font" class="w-full h-full object-cover" />
+        <Image src={D} alt="Hero font" class="w-full h-full object-cover" />
+        <Image src={O} alt="Hero font" class="w-full h-full object-cover" />
+        <Image src={P} alt="Hero font" class="w-full h-full object-cover" />
+        <Image src={A} alt="Hero font" class="w-full h-full object-cover" />
+        <Image src={M} alt="Hero font" class="w-full h-full object-cover" />
         <Image src={nblack} alt="Hero font" class="w-full h-full object-cover" />
         <Image src={nblack} alt="Hero font" class="w-full h-full object-cover" />
         <Image src={nblack} alt="Hero font" class="w-full h-full object-cover" />
@@ -59,15 +60,10 @@ import moodboard from "../assets/images/Moodboard.png";
         </div>
       </div>
     </section>
-    <section class="sm:grid sm:grid-cols-2 gap-4">
-      <div class="bg-[#D9D9D9] p-8 mb-4">
-        <h2>Forskelligt brug</h2>
-        <p>En sjov display font</p>
-      </div>
-      <div class="bg-[#D9D9D9] p-8 mb-4">
-        <h2>Eksempler</h2>
-        <p>En sjov display font</p>
-      </div>
-    </section>
+
+    <div class="bg-[#B3DDF5] p-8 mb-4">
+      <h2 class="text-custom-darkblue mb-4 max-w-lg sm:text-xl mb-4 raleway-bold">See it in action</h2>
+      <p class="text-custom-darkblue mb-4 max-w-lg">There are many different ways to use the font. These are just a few examples.</p>
+    </div>
   </article>
 </MainLayout>
