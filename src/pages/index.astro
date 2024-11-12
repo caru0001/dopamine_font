@@ -12,6 +12,12 @@ import O from "../assets/images/Oo.png";
 import P from "../assets/images/P.png";
 import A from "../assets/images/Aa.png";
 import M from "../assets/images/M.png";
+import I from "../assets/images/I.png";
+import N from "../assets/images/N.png";
+import E from "../assets/images/E.png";
+import mug from "../assets/images/mug.png";
+import tote from "../assets/images/tote.png";
+import poster from "../assets/images/poster.png";
 ---
 
 <MainLayout title="Titel">
@@ -35,23 +41,24 @@ import M from "../assets/images/M.png";
         <Image src={P} alt="Hero font" class="w-full h-full object-cover" />
         <Image src={A} alt="Hero font" class="w-full h-full object-cover" />
         <Image src={M} alt="Hero font" class="w-full h-full object-cover" />
-        <Image src={nblack} alt="Hero font" class="w-full h-full object-cover" />
-        <Image src={nblack} alt="Hero font" class="w-full h-full object-cover" />
-        <Image src={nblack} alt="Hero font" class="w-full h-full object-cover" />
+        <Image src={I} alt="Hero font" class="w-full h-full object-cover" />
+        <Image src={N} alt="Hero font" class="w-full h-full object-cover" />
+        <Image src={E} alt="Hero font" class="w-full h-full object-cover" />
       </div>
     </div>
 
     <section class="sm:grid sm:grid-cols-2 gap-4">
       <div class="bg-custom-darkblue p-8 mb-4 text-custom-lightpink">
         <h2 class="sm:text-xl raleway-bold mb-4">Inspiration</h2>
-        <p class="mb-4">The font was designed in Adobe Illustrator using a rectangular grid and a series of circles placed within the grid.</p>
+        <p class="mb-4">This font is inspired by "Dopamine Decor", which is a decor style that uses bold colors, playful shapes, and nostalgic, whimsical elements to create an environment that feels fun, energizing, and mood-lifting.</p>
+        <p class="mb-4">It focuses on rounded, balloon-inspired shapes, capturing the joyful, celebratory feel we often associate with balloons – symbols of fun, excitement, playfulness and parties.</p>
         <div class="">
           <Image src={moodboard} alt="Moodboard" class="w-full h-full object-cover" />
         </div>
       </div>
       <div class="bg-custom-darkblue p-8 mb-4 text-custom-lightpink">
         <h2 class="sm:text-xl raleway-bold mb-4">The process behind</h2>
-        <p class="mb-4">The font was designed in Adobe Illustrator using a rectangular grid and a series of circles placed within the grid.</p>
+        <p class="mb-4">The font was designed in Adobe Illustrator using a rectangular grid and a series of circles placed within the grid to achieve a coherrent look and feel.</p>
         <div class="grid grid-cols-2 gap-2">
           <Image src={egrid} alt="Hero font" class="w-full h-full object-cover" />
           <Image src={eblack} alt="Hero font" class="w-full h-full object-cover" />
@@ -63,7 +70,18 @@ import M from "../assets/images/M.png";
 
     <div class="bg-[#B3DDF5] p-8 mb-4">
       <h2 class="text-custom-darkblue mb-4 max-w-lg sm:text-xl mb-4 raleway-bold">See it in action</h2>
-      <p class="text-custom-darkblue mb-4 max-w-lg">There are many different ways to use the font. These are just a few examples.</p>
+      <p class="text-custom-darkblue mb-4 max-w-lg">There are many different ways to use the font. Here are just a few examples.</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="flex justify-center">
+          <Image src={poster} alt="Hero font on poster" class="w-full h-auto object-cover" />
+        </div>
+        <div class="flex justify-center">
+          <Image src={mug} alt="Hero font on mug" class="w-full h-auto object-cover" />
+        </div>
+        <div class="flex justify-center">
+          <Image src={tote} alt="Hero font on tote bag" class="w-full h-auto object-cover" />
+        </div>
+      </div>
     </div>
   </article>
 </MainLayout>
